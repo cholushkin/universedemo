@@ -1,23 +1,40 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
+    <style>
+        table, th, td 
+        {
+            border: 1px solid black;
+        }
+        table.center 
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | UniverseUnity</title>
-  </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" style="width: 1920px; height: 1080px; background: #231F20"></canvas>
-    <script src="Build/WebGL.loader.js"></script>
-    <script>
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WebGL.data",
-        frameworkUrl: "Build/WebGL.framework.js",
-        codeUrl: "Build/WebGL.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "UniverseUnity",
-        productVersion: "0.1",
-      });
-    </script>
-  </body>
+    <title>UniverseUnity versions catalog</title>
+</head>
+<body style="text-align: center">
+
+<table>
+        <thead>
+            <tr>
+                <th colspan="2">Versions catalog</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="version0.0.a.html">Version 0.0.a</a></td>
+                <td>First prototype</td>
+            </tr>
+            <tr>
+                <td><a href="version0.1.a.html">Version 0.1.a</a></td>
+                <td>Core loop. Basic architecture. Use Double Click to return to reaction</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
 </html>
